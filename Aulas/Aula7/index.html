@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+    table, th, td {border: 1px solid #000;}
+    td,th{padding: 7px;}
+    .nome{background-color: aqua;}
+    .email{background-color: blue;}
+    .telefone{background-color: brown;}
+    .pais{background-color: coral;}
+    .cargo{background-color: darkgoldenrod;}
+
+</style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="email">
+            <col class="telefone">
+            <col class="pais">
+            <col class="cargo">
+        </colgroup>
+        <caption>Cadastro de clientes</caption>
+        <thead>
+            <tr>
+                <th>Nome:</th>
+                <th>Email:</th>
+                <th>Telefone:</th>
+                <th>País:</th>
+                <th>Cargo:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rodrigo</td>
+                <td>rodkdmm@gmail.com</td>
+                <td>152241525</td>
+                <td>Brasil</td>
+                <td rowspan="2">Developer web</td>
+            </tr>
+
+            <tr>
+                <td>Ronaldo</td>
+                <td>rodkdmm@gmail.com</td>
+                <td>177152445</td>
+                <td>Brasil</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Total:</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+ <!--colspan: ocupa x coluna>-->
+ <!--rowspan: ocupa x linha-->
+ <!--caption: nome da tabela-->
+ <!--TH: é o nome da coluna/horizontal-->
+ <!--TD: é as informações da coluna/vertical-->
+ <!--TR: abrir a tabela-->
+</html>
