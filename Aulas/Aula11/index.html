@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+   
+    <form action="cadastro.php" method="POST"></form>
+    <fieldset>
+        <legend>Informações pessoais</legend>
+        Nome:<br>
+        <input type="text" name="nome" required autofocus maxlength="5"><br>
+        Senha:<br>
+        <input type="password" name="senha"><br>
+        Email:<br>
+        <input type="email" name="email" autocomplete="on" placeholder="seuemail@gmail.com"><br>
+        Time:<br>
+        <input type="radio" name="time" value="padrao"checked>Padrão<br>
+        <input type="radio" name="time" value="vasco">Vasco<br>
+        <input type="radio" name="time" value="santos">Santos<br>
+        <input type="radio" name="time" value="palemeiras">Palmeiras<br>
+        Cores:<br>
+        <input type="checkbox" name="time" value="padrao"checked>Padrão<br>
+        <input type="checkbox" name="cores" value="verde">Verde<br>
+        <input type="checkbox" name="cores" value="preto">Preto<br>
+        <input type="checkbox" name="cores" value="azul">Azul<br>
+        Quantidade:<br>
+        <input type="number"name="quantidade" min="0" max="500" step="10"><br><br>
+        <input type="range" name="quantidade"><br>
+        Cor:<br>
+        <input type="color"name="cor"><br>
+        Imagem:<br>
+        <input type="file" name="imagem"><br>
+        <input type="hidden"name="id"><br>
+        URL:<br>
+        <input type="url" name="site"><br>
+        Search:<br>
+        <input type="search" name="pesquisa"><br>
+        Telefone:<br>
+        <input type="telefone" name="telefone"><br>
+        Data:<br>
+        <input type="date" name="data" min="2000/12/01"><br>
+        Hora:<br>
+        <input type="time" name="hora"><br>
+        Mês e Ano:<br>
+        <input type="month" name="mes"><br>
+        Semana:<br>
+        <input type="week" name="semana"><br>
+        Data e hora:<br>
+        <input type="datetime-local" name="datahora"><br>
+        Mensagem:<br>
+        <textarea name="mensagem" cols="30" rows="5" spellcheck="true"></textarea><br>
+
+        <select name="veiculo">
+            <optgroup label="Carros">
+                <option value="camaro">Camaro</option>
+                <option value="hilux">Hilux</option>
+                <option value="jetta">Jetta</option>
+            </optgroup>
+            <optgroup label="Motos">
+                <option value="pop100">POP-100</option>
+                <option value="xj6">XJ6</option>
+                <option value="tiger">Tiger</option>
+            </optgroup>
+        </select>
+
+        <input type="submit" name="btn-enviar" value="Enviar">
+        <button type="button">Limpar</button><br>
+    </fieldset>
+</body>
+</html>
